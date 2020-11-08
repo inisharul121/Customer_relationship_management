@@ -25,7 +25,7 @@ SECRET_KEY = '_+5ha4h890z6p_o9pt6^!-d1^#-d2t^nlt-p*nc7d8kiq02i^3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nisharul-crm.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['nisharul-crm-live.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
