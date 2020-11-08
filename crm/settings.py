@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_+5ha4h890z6p_o9pt6^!-d1^#-d2t^nlt-p*nc7d8kiq02i^3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nisharul-crm.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -78,8 +78,13 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DEMO_TEST',
+        'USER':'postgres',
+        'PASSWORD': 'ab12345',
+        'HOST' : 'localhost',
+        'PORT' : '5432'
+
     }
 }
 
